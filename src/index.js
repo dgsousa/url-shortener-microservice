@@ -34,13 +34,13 @@ console.log("The server is listening on port ", port);
 // const Url = mongoose.model("URL", urlSchema);
 
 
-// const homeRoute = (req, res) => {
-// 	if(req.url == "/" && req.method == "GET") {
-// 		res.writeHead(200, {"Content-type": "text/html"});
-// 		res.write(index);
-// 		res.end();
-// 	}
-// }
+const homeRoute = (req, res) => {
+	if(req.url == "/" && req.method == "GET") {
+		res.writeHead(200, {"Content-type": "text/html"});
+		res.write(index);
+		res.end();
+	}
+}
 
 // const urlRoute = (req, res) => {
 // 	if(urlRegex.test(req.url)) {
