@@ -17,12 +17,9 @@ const index = fs.readFileSync(path.join(__dirname, "../public/index.html"), {"en
 // })
 
 const server = http.createServer((req, res) => {
-	
-	if(req.url !== "/favicon.ico") {
-		homeRoute(req, res);
-		// shortRoute(req, res);
-		// urlRoute(req, res);
-	}
+	homeRoute(req, res);
+	// shortRoute(req, res);
+	// urlRoute(req, res);
 }).listen(port);
 console.log("The server is listening on port ", port);
 
