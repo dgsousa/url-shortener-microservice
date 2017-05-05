@@ -27,13 +27,13 @@ console.log("The server is listening on port ", port);
 
 
 
-const urlSchema = mongoose.Schema({
+const urlSchema = new mongoose.Schema({
 	idNumber: Number,
 	original_url: String,
 	short_url: String
 });
 
-const Url = mongoose.model("URL", urlSchema);
+const Url = mongoose.model("Url", urlSchema);
 
 
 const homeRoute = (req, res) => {
@@ -103,9 +103,6 @@ const shortRoute = (req, res) => {
 process.on("SIGTERM", function() {
 	db.close();
 });
-
-
-
 
 
 
