@@ -1,10 +1,11 @@
-const http = require("http");
-const fs = require("fs");
-const path = require("path");
-const port = process.env.PORT || 3000;
-const index = fs.readFileSync(path.join(__dirname, "../public/index.html"), {"encoding" : "utf8"});
-const urlRegex = /\/new\/http+s?\:\/\/(www\.)?[^\.]*\.(com|org|net|gov)$/i;
-const mongoose = require("mongoose");
+console.log("test");
+// const http = require("http");
+// const fs = require("fs");
+// const path = require("path");
+// const port = process.env.PORT || 3000;
+// const index = fs.readFileSync(path.join(__dirname, "../public/index.html"), {"encoding" : "utf8"});
+// const urlRegex = /\/new\/http+s?\:\/\/(www\.)?[^\.]*\.(com|org|net|gov)$/i;
+// const mongoose = require("mongoose");
 
 
 
@@ -16,14 +17,14 @@ const mongoose = require("mongoose");
 // 	}
 // })
 
-const server = http.createServer((req, res) => {
-	if(req.url !== "/favicon.ico") {
-		homeRoute(req, res);
-		// shortRoute(req, res);
-		// urlRoute(req, res);
-	}
-}).listen(port);
-console.log("The server is listening on port ", port);
+// const server = http.createServer((req, res) => {
+// 	if(req.url !== "/favicon.ico") {
+// 		homeRoute(req, res);
+// 		// shortRoute(req, res);
+// 		// urlRoute(req, res);
+// 	}
+// }).listen(port);
+// console.log("The server is listening on port ", port);
 
 
 
