@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const port = process.env.PORT || 3000;
 const index = fs.readFileSync(path.join(__dirname, "../public/index.html"), {"encoding" : "utf8"});
-const urlRegex = /\/new\/http+s?\:\/\/(www\.)?[^\.]*\.(com|org|net|gov)$/i;
+const urlRegex = /\/http+s?\:\/\/(www\.)?[^\.]*\.(com|org|net|gov)$/i;
 const mongoose = require("mongoose");
 
 
